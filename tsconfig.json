@@ -1,6 +1,18 @@
 {
+  "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": [
+    "env.d.ts",
     "./docs/**/*",
-    "./packages/**/*"
+    "./docs/**/*.vue",
+    "./packages/**/*",
+    "./packages/**/*.vue",
+  ],
+  "compilerOptions": {
+    "types": ["unplugin-vue-macros/macros-global"],
+  },
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }
   ]
 }
