@@ -3,5 +3,10 @@
   "packageManager": "pnpm@7.3.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config-vue": "^0.35.2",
+    "eslint": "^8.34.0",
+    "typescript": "^4.9.5"
   }
 }
