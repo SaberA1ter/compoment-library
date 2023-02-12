@@ -11,5 +11,11 @@
     "component library"
   ],
   "author": "SaberA1ter<zzqchongya@foxmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vue": "^3.2.47"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.47"
+  }
 }
