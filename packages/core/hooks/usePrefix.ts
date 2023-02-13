@@ -1,5 +1,4 @@
 import { computed } from 'vue'
-// todo: fix this error
 import { defaultPrefix } from '@my-component/core/utils/config'
 
 export const useDefaultPrefix = (name: string) => {
