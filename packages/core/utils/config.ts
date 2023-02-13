@@ -1,3 +1,3 @@
 export const defaultPrefix = 'mc'
 
-export const defaultComponentPrefix = 'MC'
+export const defaultComponentPrefix = 'Mc'

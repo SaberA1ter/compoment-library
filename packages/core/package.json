@@ -2,16 +2,21 @@
   "name": "my-component",
   "version": "1.0.0",
   "description": "my component library!",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build"
   },
+  "main": "dist/my-component.js",
+  "module": "dist/my-component.js",
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "vue",
     "component library"
   ],
   "author": "SaberA1ter<zzqchongya@foxmail.com>",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "vue": "^3.2.47"
   },

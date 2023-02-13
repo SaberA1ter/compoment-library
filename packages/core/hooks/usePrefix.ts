@@ -8,7 +8,7 @@ export const useDefaultPrefix = (name: string) => {
       defaultName,
       types: {
         isPrimary: `${defaultName}-primary`,
-        isDefault: `${defaultName}`,
+        isDefault: `${defaultName}-default`,
       },
     }
   })

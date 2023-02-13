@@ -4,3 +4,8 @@ import Button from './button'
 export default (app: App) => {
   app.use(Button)
 }
+
+export * from './button'
+export {
+  Button,
+}
