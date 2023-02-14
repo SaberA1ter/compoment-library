@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "my component library!",
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "build:es": "vue-tsc --project ./tsconfig.build.json"
   },
   "main": "dist/my-component.js",
   "module": "dist/my-component.js",
+  "types": "es/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "es"
   ],
   "keywords": [
     "vue",
