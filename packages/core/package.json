@@ -1,6 +1,6 @@
 {
   "name": "my-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "my component library!",
   "scripts": {
     "build": "vite build",
@@ -11,7 +11,8 @@
   "types": "es/index.d.ts",
   "files": [
     "dist",
-    "es"
+    "es",
+    "global.d.ts"
   ],
   "keywords": [
     "vue",
