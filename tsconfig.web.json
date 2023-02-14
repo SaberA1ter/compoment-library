@@ -15,6 +15,7 @@
     "skipLibCheck": true,
     "types": ["unplugin-vue-macros/macros-global"],
     "baseUrl": ".",
+    "jsx": "preserve",
     "paths": {
       "@my-component/*": ["packages/*"]
     }
