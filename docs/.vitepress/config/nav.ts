@@ -1,3 +1,4 @@
 export default [
-  { text: '开始', link: '/guide/installation' },
+  { text: '指南', link: '/guide/installation' },
+  { text: '组件', link: '/components/button' },
 ]

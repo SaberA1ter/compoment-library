@@ -1,6 +1,10 @@
+import { readFileSync } from 'fs'
+import { resolve } from 'path'
 import { defineConfig } from 'vitepress'
+import markdownItContainer from 'markdown-it-container'
 import nav from './config/nav'
 import sidebar from './config/sidebar'
+import markDownTransform from './plugins/markdownTransform'
 
 export default defineConfig({
   title: 'MyComponent',
@@ -8,5 +12,32 @@ export default defineConfig({
   themeConfig: {
     nav,
     sidebar,
+  },
+  markdown: {
+    config: (md) => {
+      md.use(markdownItContainer, 'demo', {
+        validate: (params) => {
+          return !!params.trim().match(/^demo\s*(.*)$/)
+        },
+        render(tokens, idx) {
+          if (tokens[idx].nesting === 1) {
+            const componentAddress = tokens[idx + 2]?.content || ''
+            let code = ''
+            if (tokens[idx + 2].type === 'inline') {
+              code = readFileSync(
+                resolve('./demos', `./${componentAddress}.vue`), 'utf-8',
+              )
+            }
+            return `<Demo :demos='demos'
+            code="${encodeURIComponent(code)}"
+          componentAddress="${componentAddress}" >`
+          }
+          return '</Demo>'
+        },
+      })
+    },
+  },
+  vite: {
+    plugins: [markDownTransform()],
   },
 })
