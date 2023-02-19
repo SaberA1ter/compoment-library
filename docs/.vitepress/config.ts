@@ -29,7 +29,7 @@ export default defineConfig({
               )
             }
             return `<Demo :demos='demos'
-            code="${encodeURIComponent(code)}"
+            code="${md.utils.escapeHtml(md.options.highlight(code, 'html', ''))}"
           componentAddress="${componentAddress}" >`
           }
           return '</Demo>'
