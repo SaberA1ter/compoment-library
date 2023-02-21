@@ -2,6 +2,7 @@ import { readFileSync } from 'fs'
 import { resolve } from 'path'
 import { defineConfig } from 'vitepress'
 import markdownItContainer from 'markdown-it-container'
+import { alias } from '../../config'
 import nav from './config/nav'
 import sidebar from './config/sidebar'
 import markDownTransform from './plugins/markdownTransform'
@@ -39,5 +40,8 @@ export default defineConfig({
   },
   vite: {
     plugins: [markDownTransform()],
+    resolve: {
+      alias,
+    },
   },
 })

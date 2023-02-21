@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-  <h1>hello world!</h1>
+  <mc-button>default button</mc-button>
+  <br>
+  <mc-button type="primary">
+    primary button
+  </mc-button>
 </template>
-
-<style scoped>
-
-</style>
