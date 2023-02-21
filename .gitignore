@@ -1,2 +1,5 @@
 .idea
 node_modules
+/packages/core/es/
+/packages/core/dist/
+/docs/.vitepress/cache/
