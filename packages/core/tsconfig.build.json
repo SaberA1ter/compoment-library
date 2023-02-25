@@ -8,8 +8,10 @@
   ],
   "exclude": ["node_modules", "vite.config.ts", "dist", "es", "./**/__test__"],
   "compilerOptions": {
+    "baseUrl": "./",
     "declaration": true,
     "emitDeclarationOnly": true,
-    "outDir": "es"
+    "outDir": "es",
+    "removeComments": true
   }
 }

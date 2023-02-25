@@ -1,20 +1,10 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "compilerOptions": {
-    "target": "es2018",
-    "module": "esnext",
-    "sourceMap": false,
-    "moduleResolution": "node",
-    "allowJs": false,
     "strict": true,
-    "noUnusedLocals": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "removeComments": false,
     "skipLibCheck": true,
+    "noUnusedLocals": true,
     "types": ["unplugin-vue-macros/macros-global"],
-    "baseUrl": ".",
     "jsx": "preserve",
     "paths": {
       "@my-component/*": ["packages/*"]
