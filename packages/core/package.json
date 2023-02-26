@@ -5,6 +5,7 @@
   "scripts": {
     "build": "vite build",
     "build:es": "vue-tsc --project ./tsconfig.build.json",
+    "build:style": "rollup -c rollup.config.js",
     "test": "vitest --environment jsdom"
   },
   "main": "dist/my-component.js",

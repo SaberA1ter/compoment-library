@@ -1,0 +1,34 @@
+@import "~@my-component/core/style/variables.less";
+
+.@{prefix}-button {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  font-size: @font-size;
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-radius: @border-radius;
+  text-decoration: none;
+
+  &-default {
+    color: @text-color-default;
+    background-color: @comp-color-default;
+  }
+  &-primary {
+    color: @text-color-primary;
+    background-color: @comp-color-primary;
+  }
+}
