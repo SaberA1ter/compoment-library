@@ -3,7 +3,9 @@
   "version": "1.0.1",
   "description": "my component library!",
   "scripts": {
-    "build": "vite build",
+    "prebuild": "rimraf es/ dist/",
+    "build": "run-s prebuild build:*",
+    "build:core": "vite build",
     "build:es": "vue-tsc --project ./tsconfig.build.json",
     "build:style": "rollup -c rollup.config.js",
     "test": "vitest --environment jsdom"
