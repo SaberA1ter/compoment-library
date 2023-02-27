@@ -4,6 +4,13 @@
   "scripts": {
     "build": "pnpm --filter my-component build"
   },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.35.2",
     "@my-component/core": "workspace:my-component@",
