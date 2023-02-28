@@ -2,7 +2,15 @@
   "private": true,
   "packageManager": "pnpm@7.3.0",
   "scripts": {
-    "build": "pnpm --filter my-component build"
+    "docs:dev": "pnpm --filter @my-component/docs dev",
+    "docs:build": "pnpm --filter @my-component/docs build",
+    "test": "pnpm --filter my-component test",
+    "test:watch": "pnpm --filter my-component test:watch",
+    "prebuild": "pnpm --filter my-component prebuild",
+    "build:all": "pnpm --filter my-component build",
+    "build:core": "pnpm --filter my-component build:core",
+    "build:types": "pnpm --filter my-component test:watch",
+    "build:css": "pnpm --filter my-component test:watch"
   },
   "pnpm": {
     "peerDependencyRules": {

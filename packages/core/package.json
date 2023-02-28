@@ -6,9 +6,10 @@
     "prebuild": "rimraf es/ dist/",
     "build": "run-s prebuild build:*",
     "build:core": "vite build",
-    "build:es": "vue-tsc --project ./tsconfig.build.json",
-    "build:style": "rollup -c rollup.config.js",
-    "test": "vitest --environment jsdom"
+    "build:types": "vue-tsc --project ./tsconfig.build.json",
+    "build:css": "rollup -c rollup.config.js",
+    "test": "vitest run --environment jsdom",
+    "test:watch": "vitest --environment jsdom"
   },
   "main": "dist/my-component.js",
   "module": "dist/my-component.js",
