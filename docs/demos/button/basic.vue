@@ -6,7 +6,6 @@ export default {
 
 <template>
   <mc-button>default button</mc-button>
-  <br>
   <mc-button type="primary">
     primary button
   </mc-button>

@@ -1,9 +1,7 @@
-@import "~@my-component/core/style/variables.less";
+@import "@my-component/core/style/variables.less";
 
 .@{prefix}-button {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   list-style: none;
   position: relative;
   z-index: 0;
@@ -22,6 +20,20 @@
   white-space: nowrap;
   border-radius: @border-radius;
   text-decoration: none;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 0 10px 0 0;
+  transition: .5s;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover {
+    opacity: .7;
+  }
 
   &-default {
     color: @text-color-default;

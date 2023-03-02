@@ -9,8 +9,8 @@
     "prebuild": "pnpm --filter my-component prebuild",
     "build:all": "pnpm --filter my-component build",
     "build:core": "pnpm --filter my-component build:core",
-    "build:types": "pnpm --filter my-component test:watch",
-    "build:css": "pnpm --filter my-component test:watch"
+    "build:types": "pnpm --filter my-component build:types",
+    "build:css": "pnpm --filter my-component build:css"
   },
   "pnpm": {
     "peerDependencyRules": {
