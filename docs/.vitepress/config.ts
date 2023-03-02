@@ -41,7 +41,13 @@ export default defineConfig({
   vite: {
     plugins: [markDownTransform()],
     resolve: {
-      alias,
+      alias: [
+        ...Object.keys(alias).map(key => ({
+          find: key,
+          replacement: alias[key],
+        })),
+        { find: /^~/, replacement: '' },
+      ],
     },
   },
 })
