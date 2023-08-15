@@ -10,7 +10,8 @@
     "build:all": "pnpm --filter my-component build",
     "build:core": "pnpm --filter my-component build:core",
     "build:types": "pnpm --filter my-component build:types",
-    "build:css": "pnpm --filter my-component build:css"
+    "build:css": "pnpm --filter my-component build:css",
+    "play:dev": "pnpm --filter @my-component/play dev"
   },
   "pnpm": {
     "peerDependencyRules": {

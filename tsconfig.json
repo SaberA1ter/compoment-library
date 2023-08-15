@@ -5,6 +5,8 @@
     "./docs/**/*.vue",
     "./packages/**/*.ts",
     "./packages/**/*.vue",
+    "./play/**/*",
+    "./play/**/*.ts"
   ],
   "exclude": ["node_modules"],
   "references": [
